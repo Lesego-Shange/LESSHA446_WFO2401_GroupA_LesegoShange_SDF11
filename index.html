@@ -18,50 +18,52 @@
         <!-- component 1 -->
     <!-- Navigation Section-->
     <section>
-        <div class="mx-auto bg-white">
-            <!-- Main container with navigation and header content -->
-            <div class="relative flex flex-wrap items-center justify-between w-full py-7 shrink-0">
-                <!-- Logo -->
-                <div>
-                    <!-- Add alt attribute for accessibility -->
-                    <img src="./assets/component-1/navigation/cache-bank-logo.png" alt="Cache Bank Logo" class="h-8 px-2">
+        <Header>
+            <div class="mx-auto bg-white">
+                <!-- Main container with navigation and header content -->
+                <div class="relative flex flex-wrap items-center justify-between w-full py-7 shrink-0">
+                    <!-- Logo -->
+                    <div>
+                        <!-- Add alt attribute for accessibility -->
+                        <img src="./assets/component-1/navigation/cache-bank-logo.png" alt="Cache Bank Logo" class="h-8 px-2">
+                    </div>
+                    <!-- Desktop Navigation -->
+                    <nav class="items-center justify-between hidden gap-12 text-black md:flex">
+                        <!-- Add hover effect -->
+                        <a href="#Product" class="text-blue-900 text-font-normal hover:text-green-500 transform hover:scale-105 transition duration-300">Product</a>
+                        <a href="#Features" class="text-blue-900 text-font-normal hover:text-green-500 transform hover:scale-105 transition duration-300">Features</a>
+                        <a href="#Get-Started" class="text-blue-900 text-font-normal hover:text-green-500 transform hover:scale-105 transition duration-300">Get Started</a>
+                        <a href="#Contact" class="text-blue-900 text-font-normal hover:text-green-500 transform hover:scale-105 transition duration-300">Contact</a>
+                    </nav>
+                    <!-- Desktop Buttons -->
+                    <div class="items-center hidden gap-8 md:flex">
+                        <!-- Add aria-label for accessibility -->
+                        <button aria-label="Log In" class="border-none text-blue-900 text-font-bold hover:text-green-500 transform hover:scale-105 transition duration-300">Log In</button>
+                        <button aria-label="Sign Up" class="border-none px-4 py-2 mr-4 font-bold text-black bg-green-500 text-font-bold rounded-xl hover:bg-pink-500">Sign Up</button>
+                    </div>
+                    <!-- Hamburger and mobile menu -->
+                    <button aria-label="Toggle Mobile Menu" class="border-none mr-4 md:hidden" id="mobile-menu-toggle">
+                        <!-- Add title for accessibility -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" title="Mobile Menu Toggle">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                    <!-- Mobile Menu -->
+                    <nav id="mobile-menu" class="absolute flex flex-col items-start justify-center w-full max-h-screen gap-3 px-2 overflow-hidden bg-white md:hidden shadow-main top-full">
+                        <!-- Mobile Navigation Items -->
+                        <!-- Add hover effect -->
+                        <a href="#Product" class="text-blue-900 text-font-normal hover:text-green-500 transform hover:scale-105 transition duration-300">Product</a>
+                        <a href="#Features" class="text-blue-900 text-font-normal hover:text-green-500 transform hover:scale-105 transition duration-300">Features</a>
+                        <a href="#Get-Started" class="text-blue-900 text-font-normal hover:text-green-500 transform hover:scale-105 transition duration-300">Pricing</a>
+                        <a href="#Contact" class="text-blue-900 text-font-normal hover:text-green-500 transform hover:scale-105 transition duration-300">Company</a>
+                        <!-- Mobile Menu Buttons -->
+                        <!-- Add aria-label for accessibility -->
+                        <button aria-label="Log In" class="border-none mr-0 text-left flex items-center px-1 py-1 text-blue-900 text-font-normal hover:text-green-500 transform hover:scale-105 transition duration-300"">Log In</button>
+                        <button aria-label="Sign Up" class="border-none ml-1 flex items-center px-4 py-2 my-2 font-bold text-purple-900 bg-purple-blue-100 text-blue rounded-xl hover:bg-pink-500 hover:text-white">Sign Up</button>
+                    </nav>
                 </div>
-                <!-- Desktop Navigation -->
-                <nav class="items-center justify-between hidden gap-12 text-black md:flex">
-                    <!-- Add hover effect -->
-                    <a href="#Product" class="text-blue-900 text-font-normal hover:text-green-500 transform hover:scale-105 transition duration-300">Product</a>
-                    <a href="#Features" class="text-blue-900 text-font-normal hover:text-green-500 transform hover:scale-105 transition duration-300">Features</a>
-                    <a href="#Get-Started" class="text-blue-900 text-font-normal hover:text-green-500 transform hover:scale-105 transition duration-300">Get Started</a>
-                    <a href="#Contact" class="text-blue-900 text-font-normal hover:text-green-500 transform hover:scale-105 transition duration-300">Contact</a>
-                </nav>
-                <!-- Desktop Buttons -->
-                <div class="items-center hidden gap-8 md:flex">
-                    <!-- Add aria-label for accessibility -->
-                    <button aria-label="Log In" class="border-none text-blue-900 text-font-bold hover:text-green-500 transform hover:scale-105 transition duration-300">Log In</button>
-                    <button aria-label="Sign Up" class="border-none px-4 py-2 mr-4 font-bold text-black bg-green-500 text-font-bold rounded-xl hover:bg-pink-500">Sign Up</button>
-                </div>
-                <!-- Hamburger and mobile menu -->
-                <button aria-label="Toggle Mobile Menu" class="border-none mr-4 md:hidden" id="mobile-menu-toggle">
-                    <!-- Add title for accessibility -->
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" title="Mobile Menu Toggle">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
-                </button>
-                <!-- Mobile Menu -->
-                <nav id="mobile-menu" class="absolute flex flex-col items-start justify-center w-full max-h-screen gap-3 px-2 overflow-hidden bg-white md:hidden shadow-main top-full">
-                    <!-- Mobile Navigation Items -->
-                    <!-- Add hover effect -->
-                    <a href="#Product" class="text-blue-900 text-font-normal hover:text-green-500 transform hover:scale-105 transition duration-300">Product</a>
-                    <a href="#Features" class="text-blue-900 text-font-normal hover:text-green-500 transform hover:scale-105 transition duration-300">Features</a>
-                    <a href="#Get-Started" class="text-blue-900 text-font-normal hover:text-green-500 transform hover:scale-105 transition duration-300">Pricing</a>
-                    <a href="#Contact" class="text-blue-900 text-font-normal hover:text-green-500 transform hover:scale-105 transition duration-300">Company</a>
-                    <!-- Mobile Menu Buttons -->
-                    <!-- Add aria-label for accessibility -->
-                    <button aria-label="Log In" class="border-none mr-0 text-left flex items-center px-1 py-1 text-blue-900 text-font-normal hover:text-green-500 transform hover:scale-105 transition duration-300"">Log In</button>
-                    <button aria-label="Sign Up" class="border-none ml-1 flex items-center px-4 py-2 my-2 font-bold text-purple-900 bg-purple-blue-100 text-blue rounded-xl hover:bg-pink-500 hover:text-white">Sign Up</button>
-                </nav>
             </div>
-        </div>
+        </Header>
     </section>
 
      <!--Component 2: Hero Section-->
@@ -436,9 +438,9 @@
         
     </div>
     <!--FOOTER-->
-    <div class="w-full bg-green-500">
-        <div class="container flex flex-col mx-auto">
-            <div class="flex flex-col items-center w-full my-20">
+    <div class="flex justify-center py-8 mx-auto bg-green-500">
+        <div class="container flex flex-col mx-auto py-8">
+            <div class="flex flex-col  items-center w-full mx-auto my-20">
                 <!--Section containing icons-->
                 <div class="flex flex-col items-center gap-6 mb-8" >
                     <div class="flex flex-wrap items-center justify-center gap-5 lg:gap-12 gap-y-3 lg:flex-nowrap text-dark-grey-900">
@@ -505,25 +507,48 @@
         </div>
     </div>
     <script>
+        // nav menu toggle
         document.getElementById("mobile-menu-toggle").addEventListener("click", function() {
             document.getElementById("mobile-menu").classList.toggle("hidden");
         })
+
+
+            // Function to animate the statistics counters
+        function animateCounters() {
+            const counters = document.querySelectorAll('[countto]');
+
+            // Iterate over each counter element
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('countto'); // Get the target value
+                const current = +counter.textContent; // Get the current value
+                const increment = Math.ceil(target / 100); // Calculate the increment value for smooth animation
+                let count = current;
+
+                // Function to update the counter value
+                function updateCounter() {
+                    if (count < target) {
+                        count += increment; // Increment the count
+                        counter.textContent = count; // Update the counter value
+                        setTimeout(updateCounter, 30); // Update the count every 30 milliseconds for smooth animation
+                    } else {
+                        counter.textContent = target; // Set the final count when animation completes
+                    }
+                }
+
+                updateCounter(); // Start the counter animation
+            });
+        }
+
+        // Function to animate the counters infinitely with a delay of 3 seconds
+        function animateCountersInfinitely() {
+            animateCounters(); // Start the counter animation
+            setTimeout(animateCountersInfinitely, 3000); // Call the function recursively after 3 seconds
+        }
+
+        // Call the animateCountersInfinitely function to start the infinite animation
+        animateCountersInfinitely();
     </script>
-    <div class="w-full">
-        <!-- Wide full-width container for additional content -->
-    </div>
-    <div class="container mx-auto">
-        <!-- Centered container for more content -->
-    </div>
-    <div class="w-full">
-        <!-- Wide full-width container for additional content -->
-    </div>
-    <div class="w-full">
-        <!-- Wide full-width container for additional content -->
-    </div>
-    <div class="w-full bg-green-500">
-        <!-- Full-width footer container with green background -->
-    </div>
+
     <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/plugins/countup.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/countto.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/plugins/leaflet.js"></script>
